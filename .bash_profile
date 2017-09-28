@@ -11,6 +11,8 @@ if [ -f ~/.git-completion.bash ]; then
   __git_complete grb _git_rebase
   __git_complete gb _git_branch
   __git_complete gadd _git_add
+  __git_complete gfetch _git_fetch
+  __git_complete gdiff _git_diff
 
 fi
 
@@ -29,3 +31,5 @@ alias grb='git rebase'
 alias gm='git merge'
 alias gstash='git stash'
 alias gadd='git add'
+alias gfetch='git fetch'
+alias gdiff='git diff'
