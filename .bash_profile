@@ -13,6 +13,7 @@ if [ -f ~/.git-completion.bash ]; then
   __git_complete gadd _git_add
   __git_complete gfetch _git_fetch
   __git_complete gdiff _git_diff
+  __git_complete glog _git_log
 
 fi
 
