@@ -14,6 +14,7 @@ if [ -f ~/.git-completion.bash ]; then
   __git_complete gfetch _git_fetch
   __git_complete gdiff _git_diff
   __git_complete glog _git_log
+  __git_complete gshow _git_show
 
 fi
 
@@ -34,3 +35,4 @@ alias gstash='git stash'
 alias gadd='git add'
 alias gfetch='git fetch'
 alias gdiff='git diff'
+alias gshow='git show'
