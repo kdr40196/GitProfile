@@ -10,7 +10,7 @@ alias gcob='git checkout -b'
 alias gstat='git status'
 alias gb='git branch'
 alias gc='git commit'
-alias gamend='git commit --amend'
+alias gamend='gc --amend'
 alias gpull='git pull'
 alias gpush='git push'
 alias grb='git rebase'
@@ -20,10 +20,12 @@ alias gadd='git add'
 alias gfetch='git fetch'
 alias gdiff='git diff'
 alias gshow='git show'
+alias gcp='git cherry-pick'
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 
+  __git_complete gc _git_commit
   __git_complete gco _git_checkout
   __git_complete gpush _git_push
   __git_complete gpull _git_pull
@@ -35,5 +37,6 @@ if [ -f ~/.git-completion.bash ]; then
   __git_complete gdiff _git_diff
   __git_complete glog _git_log
   __git_complete gshow _git_show
+  __git_complete gcp _git_cherry_pick
 
 fi
